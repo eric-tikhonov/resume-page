@@ -161,7 +161,6 @@ li {
   background-color: #45a049;
 }
 
-/* Manual Page Break with Spacing for PDF */
 @media print {
   .page-break {
     page-break-before: always;
