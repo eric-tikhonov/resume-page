@@ -165,7 +165,7 @@ li {
 @media print {
   .page-break {
     page-break-before: always;
-    margin-top: 0.5in; /* Adds spacing at the top of the new page for PDF only */
+    margin-top: 0.5in;
   }
 }
 
