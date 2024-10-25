@@ -19,6 +19,7 @@ const path = require("path"); // Ensure path module is included
 
   await page.setContent(htmlContent, { waitUntil: "load" });
 
+  // Load styles CSS
   const cssContent = fs.readFileSync("assets/styles.css", "utf8");
   await page.addStyleTag({ content: cssContent });
 
