@@ -2,6 +2,8 @@
 
 This project automates the deployment of a HTML resume site using AWS services. The setup includes AWS CodePipeline to trigger builds on changes to the GitHub repository, AWS CodeBuild to generate a new PDF from the HTML resume site, and AWS S3 and CloudFront to deploy and provide high availability for the resume files.
 
+Note: This could have utilized lambda serverless functions for a more cost-effective solution, but it serves to explore and learn from various services.
+
 ## Architecture Overview
 
 1. **AWS CodePipeline**:
