@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  build:
+    commands:
+      - echo Build started on `date`
+      - aws s3 sync assets/ s3://resume.erictikhonov.com/ --delete
+
+artifacts:
+  files:
+    - assets/**/*
