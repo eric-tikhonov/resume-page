@@ -42,7 +42,6 @@ body, html {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-  page-break-inside: avoid; /* Prevents breaking inside sections */
 }
 
 .resume-section h2 {
@@ -60,7 +59,6 @@ li {
   margin-bottom: .5em;
   line-height: 1.4;
   font-weight: 400;
-  page-break-inside: avoid; /* Prevents breaking inside list items */
 }
 
 #education p {
@@ -104,7 +102,6 @@ li {
   margin-bottom: 1em;
   padding-left: 20px;
   position: relative;
-  page-break-inside: avoid; /* Prevents breaking inside timeline items */
 }
 
 .timeline-item:before {
@@ -153,19 +150,21 @@ li {
   right: 1em;
 }
 
-#download-btn {
-  background-color: #4CAF50;
+.download-button-container a {
+  text-decoration: none;
   color: white;
-  border: none;
+  background-color: #4CAF50;
   padding: 10px 15px;
   border-radius: 5px;
+  display: inline-block;
   cursor: pointer;
 }
 
-#download-btn:hover {
+.download-button-container a:hover {
   background-color: #45a049;
 }
 
+/* Manual Page Break with Spacing for PDF */
 @media print {
   .page-break {
     page-break-before: always;
