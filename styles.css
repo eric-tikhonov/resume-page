@@ -198,7 +198,15 @@ li {
     display: block;
     margin-bottom: 0.5em;
   }
-  .contact-info p .contact-divider { display: none; }
+
+  .contact-info p .contact-divider {
+    display: none;
+  }
+
+  body,
+  html {
+    margin-left: 0;
+  }
 }
 
 @media print {
