@@ -190,7 +190,8 @@ li {
   .download-button-container {
     position: absolute;
     top: 1em;
-    left: 50%;
+    left: 60%;
+    transform: translateX(-50%);
   }
 
   .contact-info p a {
