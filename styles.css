@@ -208,6 +208,29 @@ li {
   html {
     margin-left: 0;
   }
+
+  .certifications-list {
+    display: block;
+  }
+
+  .certifications-list ul {
+    width: 100%;
+  }
+}
+
+.certifications-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certifications-list ul {
+  width: 50%;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.certifications-list li {
+  margin-bottom: 10px;
 }
 
 @media print {
